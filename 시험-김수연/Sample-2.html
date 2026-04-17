@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 1920px;
+        background: peru;
+
+        }
+
+        .con {
+            display: flex;
+            width: 1440px;
+            gap: 50px;
+            margin: auto;
+        }
+
+        .box1 {background-color: aqua;
+        width: 40%;
+    height: 400px;}
+        .box2{ background-color: palevioletred;
+        width: 40%;
+    height: 400px;}
+
+
+ @media (max-width: 700px) {
+    .con{
+        flex-direction: column;
+        width: auto;
+    }
+     .main{width: auto;}
+ }
+    </style>
+</head>
+
+<body>
+
+    <section class="main">
+        <div class="con">
+            <div class="box1">
+                <div class="text">
+                <h3> 서브 텍스트</h3>
+                <h2>메인 텍스트</h2>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="text"></div>
+                <h3> 서브 텍스트</h3>
+                <h2>메인 텍스트</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
